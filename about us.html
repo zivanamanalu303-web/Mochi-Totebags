@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - MOCHI TOTEBAGS</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8dce8;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+
+        .header {
+            background-color: #ffdc55;
+            padding: 20px 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #493b27;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #493b27;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: white;
+        }
+
+        .cart-button {
+            background: #fffaf0;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* ABOUT SECTION */
+
+        .about-section {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        /* MAIN BOX */
+
+        .about-box {
+            position: relative;
+            background-color: #fff3cf;
+            border: 6px solid white;
+            border-radius: 12px;
+            max-width: 850px;
+            width: 100%;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(100, 50, 60, 0.15);
+        }
+
+        .about-box h1 {
+            font-size: 40px;
+            color: #985d70;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #aa7b7c;
+            margin-bottom: 25px;
+        }
+
+        /* TEAM IMAGE */
+
+        .team-image {
+            width: 100%;
+            max-width: 520px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 5px solid white;
+            margin-bottom: 25px;
+        }
+
+        /* DESCRIPTION */
+
+        .description {
+            color: #755b54;
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 30px;
+        }
+
+        /* GROUP LABEL */
+
+        .group-label {
+            display: inline-block;
+            background-color: #ffdc80;
+            color: #80515a;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* TEAM MEMBERS */
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background-color: #fffaf0;
+            padding: 20px;
+            border-radius: 12px;
+            width: 190px;
+            border: 2px solid #f5d9b1;
+        }
+
+        .member h3 {
+            color: #985d70;
+            margin-bottom: 10px;
+        }
+
+        .member p {
+            color: #866c60;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* FLOWER DECORATIONS */
+
+        .flower {
+            position: absolute;
+            font-size: 55px;
+        }
+
+        .flower-one {
+            top: -30px;
+            left: -30px;
+        }
+
+        .flower-two {
+            top: 100px;
+            right: -35px;
+        }
+
+        .flower-three {
+            bottom: -30px;
+            left: 40px;
+        }
+
+        .flower-four {
+            bottom: 60px;
+            right: -30px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-box {
+                padding: 30px 20px;
+            }
+
+            .team-image {
+                height: 200px;
+            }
+
+            .flower {
+                font-size: 35px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            MOCHI<span>TOTEBAGS</span>
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Products</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+<div>
+       <button class="cart-button" onclick="window.location.href='carts.html'">
+    🛒 Cart (<span id="cartcount">0</span>)
+</button> 
+        </div>
+    </header>
+  
+
+
+    <!-- ABOUT US -->
+
+    <main class="about-section">
+
+        <div class="about-box">
+
+            <!-- FLOWER STICKERS -->
+
+            <div class="flower flower-one">🌼</div>
+            <div class="flower flower-two">🌸</div>
+            <div class="flower flower-three">🌷</div>
+            <div class="flower flower-four">🌼</div>
+
+
+            <h1>Get to Know Us!</h1>
+
+            <p class="subtitle">
+                Three students, one idea ♡
+            </p>
+
+
+            <!-- TEAM PICTURE -->
+
+            <img
+                src="https://assets.genially.com/s3fs-public/images/scape_games_1test%20%281%29.png?VersionId=yksji.hKZelWhMnnealX6.9MnOvJk5Jf"
+                alt="Students working together"
+                class="team-image"
+            >
+
+
+            <!-- DESCRIPTION -->
+
+            <div class="group-label">
+                BUSINESS MANAGEMENT • GROUP 2
+            </div>
+
+            <p class="description">
+
+                Hello and welcome to MOCHI TOTEBAGS!
+
+                We are a team of three students participating
+                in an extracurricular Business Management program.
+
+                As part of our learning experience, we came up
+                with the idea of creating MOCHI TOTEBAGS,
+                a small business that focuses on cute, stylish,
+                and practical tote bags for everyday use.
+
+                Through this project, we aim to learn more about
+                entrepreneurship, teamwork, creativity, marketing,
+                and how to manage a business.
+
+                MOCHI TOTEBAGS represents our creativity,
+                collaboration, and passion for turning a simple
+                idea into something meaningful.
+
+                Thank you for supporting our little business! ♡
+
+            </p>
+
+
+            <!-- TEAM MEMBERS -->
+
+            <h2 style="color:#985d70; margin-bottom:20px;">
+                Meet Our Team!
+            </h2>
+
+            <div class="team-members">
+
+                <div class="member">
+                    <h3>Meshya</h3>
+                    <p>
+                        Part of the creative team behind
+                        MOCHI TOTEBAGS.
+                    </p>
+                </div>
+
+                <div class="member">
+                    <h3>Nadia</h3>
+                    <p>
+                        Helps develop ideas and manage
+                        our business project.
+                    </p>
+                </div>
+
+                <div class="member">
+                    <h3>Zivana</h3>
+                    <p>
+                        Contributes to our teamwork,
+                        planning, and creativity.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

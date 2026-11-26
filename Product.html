@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Mochi Totebags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MOCHI<span>TOTEBAGS</span></div>
+
+       <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Products</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+<div>
+       <button class="cart-button" onclick="window.location.href='carts.html'">
+    🛒 Cart (<span id="cartcount">0</span>)
+</button> 
+        </div>
+    </header>
+
+    <h1 style="text-align:center; margin-top:40px;">
+        Our Tote Bags
+    </h1>
+
+    <div class="products-container">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500" alt="Classic tote bag">
+
+            <h3>Classic Mochi</h3>
+            <p>Rp 45.000</p>
+
+            <div class="product-actions">
+                <button onclick="addToCart('Classic Mochi', 45000)">🛒</button>
+                <button onclick="alert('Classic Mochi: A simple everyday tote bag!')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500" alt="Minimal tote bag">
+
+            <h3>Daily Mochi</h3>
+            <p>Rp 55.000</p>
+
+            <div class="product-actions">
+                <button onclick="addToCart('Daily Mochi', 55000)">🛒</button>
+                <button onclick="alert('Daily Mochi: Perfect for your daily activities!')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500" alt="Fashion tote bag">
+
+            <h3>Sweet Mochi</h3>
+            <p>Rp 65.000</p>
+
+            <div class="product-actions">
+                <button onclick="addToCart('Sweet Mochi', 65000)">🛒</button>
+                <button onclick="alert('Sweet Mochi: A cute and stylish tote bag!')">View Details</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

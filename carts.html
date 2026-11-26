@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MOCHI<span>TOTEBAGS</span></div>
+
+       <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Products</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="cart-button" onclick="window.location.href='carts.html'">
+            🛒 Cart (<span id="cartcount">0</span>)
+        </button>
+        <button onclick="checkoutWhatsApp()" class="order-button">
+    Order Now 
+</button>
+    </header>
+
+    <div class="cart-container">
+        <h1>My Shopping Cart 🛒</h1>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total" id="cart-total">
+            Total: Rp 0
+        </div>
+
+        <br>
+
+        <a href="Product.html" class="shop-button">
+            Continue Shopping
+        </a>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

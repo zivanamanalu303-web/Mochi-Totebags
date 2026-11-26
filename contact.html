@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - MOCHI TOTEBAGS</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8dce8;
+            background-image: url(one.jpeg)
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+
+        .header {
+            background-color: #ffdc55;
+            padding: 20px 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #493b27;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #493b27;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: white;
+        }
+
+        .cart-button {
+            background: #fffaf0;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* CONTACT SECTION */
+
+        .contact-section {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        /* MAIN SQUARE */
+
+        .contact-box {
+            position: relative;
+            background-color: #ffe78a;
+            border: 6px solid #fff9e8;
+            width: 480px;
+            min-height: 430px;
+            padding: 55px 35px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(100, 50, 60, 0.15);
+        }
+
+        .contact-box h1 {
+            font-size: 42px;
+            color: #8a5260;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #916d64;
+            margin-bottom: 35px;
+            font-size: 15px;
+        }
+
+        /* CONTACT INFORMATION */
+
+        .contact-person {
+            margin-bottom: 25px;
+            padding-bottom: 18px;
+            border-bottom: 1px dashed #cda76a;
+        }
+
+        .contact-person h3 {
+            color: #80515a;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .contact-person p {
+            color: #765b4f;
+            font-size: 15px;
+        }
+
+        /* FLOWER STICKERS */
+
+        .flower {
+            position: absolute;
+            font-size: 55px;
+        }
+
+        .flower-one {
+            top: -35px;
+            left: -35px;
+            transform: rotate(-20deg);
+        }
+
+        .flower-two {
+            top: 40px;
+            right: -38px;
+            transform: rotate(15deg);
+        }
+
+        .flower-three {
+            bottom: -30px;
+            left: 35px;
+            transform: rotate(20deg);
+        }
+
+        .flower-four {
+            bottom: -35px;
+            right: -25px;
+            transform: rotate(-15deg);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact-box {
+                width: 100%;
+                max-width: 430px;
+                padding: 45px 25px;
+            }
+
+            .flower {
+                font-size: 40px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            MOCHI<span>TOTEBAGS</span>
+        </div>
+
+       <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Products</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+      <div>
+       <button class="cart-button" onclick="window.location.href='carts.html'">
+    🛒 Cart (<span id="cartcount">0</span>)
+</button> 
+        </div>
+    </header>
+
+
+    <!-- CONTACT PAGE -->
+
+    <main class="contact-section">
+
+        <div class="contact-box">
+
+            <!-- FLOWER DECORATIONS -->
+
+            <div class="flower flower-one">🌼</div>
+            <div class="flower flower-two">🌸</div>
+            <div class="flower flower-three">🌷</div>
+            <div class="flower flower-four">🌼</div>
+
+
+            <!-- CONTACT TITLE -->
+
+            <h1>Contact Us</h1>
+
+            <p class="subtitle">
+                We'd love to hear from you! ♡
+            </p>
+
+
+            <!-- FIRST PERSON -->
+
+            <div class="contact-person">
+                <h3>Meshya</h3>
+                <p>📞 08XX-XXXX-XXXX</p>
+            </div>
+
+
+            <!-- SECOND PERSON -->
+
+            <div class="contact-person">
+                <h3>Nadia</h3>
+                <p>📞 08XX-XXXX-XXXX</p>
+            </div>
+
+
+            <!-- THIRD PERSON -->
+
+            <div class="contact-person">
+                <h3>Zivana</h3>
+                <p>📞 08XX-XXXX-XXXX</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
